@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 app.get("/", (req,res) =>{
-    res.sendFile(__dirname+"/index.html")
+    res.sendFile(__dirname+"/pages/index.html")
 })
 
 app.post("/register",  async(req,res) => {
@@ -56,10 +56,10 @@ app.post("/register",  async(req,res) => {
 })
 
 app.get("/Success", (req,res) => {
-    res.sendFile(__dirname+"/Success.html")
+    res.sendFile(__dirname+"/pages/Success.html")
 })
 app.get("/Error", (req,res)=>{
-    res.sendFile(__dirname+"/Error.html")
+    res.sendFile(__dirname+"/pages/Error.html")
 })
 
 app.listen(port, ()=>{
