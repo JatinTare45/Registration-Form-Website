@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+
+  <body>
+
+    <div class="form-class">
+      <h1>Registration Form</h1>
+      <form id="main-form" method="post" action="/register">
+        <div class="form-content">
+          <label class="form-label">Username:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-content">
+          <label class="form-label">Email address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-content">
+          <label class="form-label">Password:</label>
+          <input type="password" id="password"  name="password" required />
+        </div>
+
+        <div class="form-content">
+          <label class="form-label">Mobile no.:</label>
+          <input type="tel" id="tel"  name="tel" required />
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+
+    </div>
+
+    <style>
+      body{
+        font-family: Arial, sans-serif;
+        background-color: rgb(168, 34, 225);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .form-class {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        text-align: center;
+      }
+
+      .form-content {
+        margin-bottom: 15px;
+        text-align: left;
+      }
+        label{
+          margin-bottom: 6px;
+          }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button{
+      width: 200px;
+      background-color: rgb(17, 148, 21);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: #fff;
+      font-size: large;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {  
+        background-color: #ec6c10;
+    }
+    </style>
+  </body>
+</html>
