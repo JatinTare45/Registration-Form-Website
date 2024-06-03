@@ -10,7 +10,8 @@ const port = process.env.PORT || 4545;
 
 const name=process.env.MONGODB_USERNAME;
 const password=process.env.MONGODB_PASSWORD;
-mongoose.connect(`mongodb+srv://jatintare92:${password}@cluster0.8lukozo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
+//Use your own mongoDB database link to access your database below instead of MONGODB_URL.
+mongoose.connect(`MONGODB_URL`);
 
 const registrationSchema=new mongoose.Schema({
     name:String,
